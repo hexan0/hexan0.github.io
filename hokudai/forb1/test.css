@@ -1,0 +1,27 @@
+p {
+  /*color:blue;*/
+  line-height:1.5;
+}
+
+h1 {
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #7db4e6;
+}
+
+h2 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #fffaf4;/*背景色*/
+  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+}
+
+h3 {
+  color: #6594e0;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  border-bottom: dashed 2px #6594e0;
+}
+
+h4 {
+  /*線の種類（実線） 太さ 色*/
+  border: solid 1px black;
+}

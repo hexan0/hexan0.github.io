@@ -1,0 +1,27 @@
+.page .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:0px 0px;
+}
+
+.page .container .header{
+    max-width:1000px;
+    margin:0px auto;
+    padding:10px 0px 0px;
+    position: relative;
+    background: #fffaf4;
+}
+.page .container .menu{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px 20px;
+    border-right: solid 5px #ffaf58;
+    position: relative;
+    float: left;
+}
+.page .container .content{
+    max-width: 1000px;
+    margin: 30px 200px;
+    padding: 0px 0px;
+    position: relative;
+}
