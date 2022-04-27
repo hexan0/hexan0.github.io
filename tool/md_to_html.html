@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>markdown to html</title>
+  </head>
+  <body>
+    <p>
+      markdown to html
+    </p>
+    <!--<form class="" id="md_to_html" name="md_to_html" onsubmit="convert()">
+      <textarea form="md_to_html" id="md" name="md" rows="8" cols="80" placeholder="Write here(.md)"></textarea>
+      <input type="submit" name="" value="Convert to HTML">
+    </form>-->
+    <textarea id="md" name="md" rows="8" cols="80" placeholder="Write here(.md)"></textarea>
+    <br>
+    ↓
+    <!--<button type="button" name="" onclick="convert()">Convert to HTML</button>-->
+    <input type="button" value="Convert to HTML" onclick="convert()">
+    ↓
+    <br>
+    <textarea id="result" name="result" rows="8" cols="80" placeholder="Convert here(.html)" disabled></textarea>
+    <br>
+    <!--<span id="view"></span>-->
+    <br>
+    <p>
+      ＜対応済み＞
+      <br>
+      # → h1~h3
+      <br>
+      \n\n → p
+      <br>
+      \n → br
+    </p>
+    <script>
+      function convert(){
+        let md_id = document.getElementById('md');
+        let result_id = document.getElementById('result');
+        let view_id = document.getElementById('view');
+        let md = md_id.value;
+        //h1~h4
+        md = md.replace(/\n# (.*)\n/g, ';n<h1>$1</h1>;n').replace(/\n## (.*)\n/g, ';n<h2>$1</h2>;n').replace(/\n### (.*)\n/g, ';n<h3>$1</h3>;n').replace(/\n#### (.*)\n/g, ';n<h4>$1</h4>;n');
+        //p
+        md = md.replace(/\n\n(.*)\n\n/g, ';n<p>;n$1;n</p>;n');
+        //list
+        md = md.replace(/\n- (.*)\n/g, ';n<li>;n$1;n</li>;n');
+        //br
+        md = md.replace(/\n/g, '\n<br>\n');
+        //for html based edit
+        md = md.replace(/;n/g, '\n');
+        //window.alert(md);
+        result_id.value = md;
+        view_id.textContent = md;
+        //location.reload();
+        //document.getElementById('result').value = document.getElementById('md').value;
+      }
+    </script>
+  </body>
+</html>
