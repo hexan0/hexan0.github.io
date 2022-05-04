@@ -28,5 +28,14 @@ h3 {
 
 h4 {
   /*線の種類（実線） 太さ 色*/
-  border: solid 1px black;
+  /*border: solid 1px black;*/
+  color: #4db56a;
+}
+h4::before {
+  color: #4db56a;
+  content: "◆ ";
+}
+h4::after {
+  color: #4db56a;
+  content: " ◆";
 }
