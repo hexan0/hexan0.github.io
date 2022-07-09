@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../css/test.css">
+    <link rel="stylesheet" type="text/css" media="screen, tv" href="../../../../css/default_layout.css">
+    <link rel="stylesheet" type="text/css" media="handheld" href="../../../../css/mobile_layout.css">
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+    <title>07.高校物理の落下運動 - 高校物理(力学編)</title>
+  </head>
+  <body>
+    <section class="page">
+      <div class="container">
+        <div class="header">
+          > <a href="../../../index.html">database</a> > <a href="../../index.html">note</a> > <a href="../index.html">高校</a> > <a href="index.html">高校物理</a> > 力学編 > <b>高校物理の落下運動</b>
+        </div>
+        <div class="menu">
+          <p>
+            ↩<a href="../../../../link.html">[hexan0.github.io]</a>
+            <br>
+            ↩<a href="../../../index.html">[database]</a>
+            <br>
+            ↩<a href="../../index.html">[note]</a>
+            <br>
+            ↩<a href="../index.html">[高校]</a>
+            <br>
+            <a href="index.html">[高校物理]</a>
+            <br>
+            ├<a href="101_intro.html">概要編</a>
+            <br>
+            ├<b><a href="201_intro.html">力学編</a></b>
+            <br>
+            ├<a href="301_intro.html">熱力学編</a>
+            <br>
+            ├<a href="401_intro.html">波動編</a>
+            <br>
+            ├<a href="501_intro.html">電磁気編</a>
+            <br>
+            └<a href="601_intro.html">原子物理編</a>
+          </p>
+        </div>
+        <div class="content">
+          <h1>07.高校物理の落下運動 - 高校物理</h1>
+          <p>
+            ※無許可の閲覧禁止。
+            ※無断転載禁止。
+          </p>
+          <h3>今回の目標</h3>
+          <ul>
+            <li>落下を含む等加速度運動を理解する</li>
+            <li>重力加速度を正しく関数に使えるようにする</li>
+          </ul>
+          <h3>今回の範囲</h3>
+          <ul>
+            <li>物理基礎：p.--</li>
+            <li>物理：p.--</li>
+            <li>リードα：Q.--</li>
+          </ul>
+          <h2>7.1 自由落下</h2>
+          <h3>重力</h3>
+          <p>
+            地球上の物体には重力が働いているので、空中で物体から手を離すと落下運動をします。
+            <br>
+            重力にしたがって物体が落ちていくとき、その加速度を<b>重力加速度</b>といいます（詳しくは次回の運動方程式で）。
+            <br>
+            重力加速度は定数\(g[m/s^2]\)で表され、\(g=9.8m/s^2\)として計算することが多いです。
+            <br>
+            ※万有引力を学習すると重力加速度が導出できるようになります。
+          </p>
+          <h3>自由落下</h3>
+          <p>
+            初速度をあたえない落下運動、つまり空中で物体から手を離した時の落下運動を<b>自由落下</b>といいます。
+          </p>
+          <figure>
+            <img src="img/203_01.png"  title="自由落下運動の図" alt="" width="100%">
+            <legend>図2.3.1 自由落下運動</legend>
+          </figure>
+          <p>
+            このときの速度・変位の式はこのようになります。
+            <br>
+            上向きを\(y\)軸正方向とすると、
+            \[a=-g\]
+            \[v(t)=-gt\]
+            \[x(t)=-\frac{g}{2}t^2\]
+            加速度が下向き（\(y\)軸負方向）であることに注意しましょう。
+          </p>
+          <h2>7.2 水平投射</h2>
+          <p>
+            上下だけの自由落下に、横の運動が加わるとどうなるでしょうか。
+            <br>
+            図にするとこのような運動です。
+          </p>
+          <figure>
+            <img src="img/203_02.png"  title="水平投射運動の図" alt="" width="100%">
+            <legend>図2.3.2 水平投射運動</legend>
+          </figure>
+          <p>
+            横向きに初速\(v_0\)がかかっています。
+            <br>
+            自由落下と異なり、2次元の運動になることに注意しましょう。
+            <br>
+            このときの速度・変位の式はこのようになります。
+            <br>
+            右向きを\(x\)軸正方向、上向きを\(y\)軸正方向とすると、
+            <br>
+            [高校表記]
+            \[a_x=0, \quad a_y=-g\]
+            \[v_x=v_0, \quad v_y=-gt\]
+            \[x=v_0t, \quad y=-\frac{g}{2}t^2\]
+            [大学表記]
+            \[{\bf a}=(0,-g)\]
+            \[{\bf v}=(v_0,-gt)\]
+            \[{\bf x}=(v_0t,-\frac{g}{2}t^2)\]
+          </p>
+          <h2>7.3 斜方投射</h2>
+          <p>
+            次に上向きにも初速をあたえてみます。
+            <br>
+            どんな運動の軌跡を描くか想像できますか？
+            <br>
+            図にするとこのようになります。
+          </p>
+          <figure>
+            <img src="img/203_03.png"  title="斜方投射運動の図" alt="" width="100%">
+            <legend>図2.3.3 斜方投射運動</legend>
+          </figure>
+          <p>
+            右向きを\(x\)軸正方向、上向きを\(y\)軸正方向として、右向きに初速\(v_{x0}\)、上向きに初速\(v_{y0}\)とすると、
+            <br>
+            このときの速度・変位の式はこのようになります。
+            <br>
+            [高校表記]
+            \[a_x=0, \quad a_y=-g\]
+            \[v_x=v_{x0}, \quad v_y=v_{y0}-gt\]
+            \[x=v_{x0}t, \quad y=v_{y0}t-\frac{g}{2}t^2\]
+            [大学表記]
+            \[{\bf a}=(0,-g)\]
+            \[{\bf v}=(v_{x0},v_{y0}-gt)\]
+            \[{\bf x}=(v_{x0}t,v_{y0}t-\frac{g}{2}t^2)\]
+          </p>
+          <h2>7.4 演習</h2>
+          <p>
+            １．
+            <br>
+            ２．
+            <br>
+            ３．
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
